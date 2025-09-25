@@ -79,12 +79,12 @@ jobs:
 
       - name: Build
         run: |
-          cd gcc
+          cd gcc/build
           make -j32
 
       - name: Install
         run: |
-          cd gcc
+          cd gcc/build
           make install
 
       - name: Verify installation
