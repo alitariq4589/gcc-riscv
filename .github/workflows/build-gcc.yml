@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: pioneer-box
+    runs-on: RISCV64
     permissions:
       contents: write
     outputs:
