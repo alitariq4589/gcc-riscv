@@ -36,15 +36,6 @@ jobs:
           uname -a
           gcc --version
           g++ --version
-          make --version
-          cmake --version
-          python3 --version
-          pip3 --version
-          wget --version
-          curl --version
-          git --version
-          cat /proc/cpuinfo
-          cat /etc/os-release
           ldd --version
 
       - name: Clone GCC and checkout latest tag
