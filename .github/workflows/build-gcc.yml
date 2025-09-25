@@ -64,9 +64,6 @@ jobs:
 
           echo "tag_name=$LATEST_TAG" >> "$GITHUB_OUTPUT"
 
-          # Produce dummy artifact
-          cd "$GITHUB_WORKSPACE/installed_binaries"
-
       - name: Get Prerequisites
         run: |
           mkdir installed_binaries
