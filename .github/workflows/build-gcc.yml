@@ -97,7 +97,7 @@ jobs:
       - name: Get GCC version and set outputs
         id: get-version
         run: |
-          GCC_VERSION=$(cd $GITHUB_WORKSPACE/installed_binaries/bin && ./gcc --version | cut -c 2-)
+          GCC_VERSION=$($GITHUB_WORKSPACE/installed_binaries/bin/gcc -dumpfullversion -dumpversion)
           ASSET_NAME="gcc-${GCC_VERSION}-riscv64-linux.tar.gz"
           ASSET_PATH="$GITHUB_WORKSPACE/${ASSET_NAME}"
 
