@@ -1,7 +1,9 @@
 # gcc-riscv
 
-This repository is part of Cloud-V builds for building latest version of packages for RISC-V architecture.
+GCC releases for RISC-V from official upstream.
 
-This repository uses official open source method of building the package and is set up with scheduled builds of tags released by official repositories. 
+This repository is set up to trigger CI for periodic release. There is no change to the source code. The CI file just fetches the source code from upstream repository and builds it
 
-You can check the `.github/workflows` for more information on how this builds the source code.
+This release is set up as part of RISC-V software releases provided by [Cloud-V](https://cloud-v.co).
+
+If you have a package which you would like us to add, contact us at https://cloud-v.co/contactus or join our [Discord server](https://discord.gg/H7EGrzV93p) :)
